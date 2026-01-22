@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML to Design Capture</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>HTML to Design</h1>
+      <p class="subtitle">捕获当前网页</p>
+    </div>
+
+    <div class="content">
+      <div class="form-group">
+        <label for="viewport-width">视口宽度 (px)</label>
+        <input type="number" id="viewport-width" value="1440" min="320" max="3840">
+      </div>
+
+      <div class="form-group">
+        <label for="viewport-height">视口高度 (px)</label>
+        <input type="number" id="viewport-height" value="900" min="240" max="2160">
+      </div>
+
+      <div class="form-group">
+        <label for="theme">主题</label>
+        <select id="theme">
+          <option value="light">明亮</option>
+          <option value="dark">暗黑</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>
+          <input type="checkbox" id="include-images" checked>
+          包含图片
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label>
+          <input type="checkbox" id="include-fonts" checked>
+          包含字体信息
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label>
+          <input type="checkbox" id="include-interactions">
+          包含交互状态
+        </label>
+      </div>
+
+      <button id="capture-btn" class="btn btn-primary">
+        <span class="btn-icon">📸</span>
+        捕获页面
+      </button>
+
+      <div id="status" class="status hidden"></div>
+
+      <div id="progress" class="progress hidden">
+        <div class="progress-bar"></div>
+        <div class="progress-text">处理中...</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p class="help-text">
+        捕获的页面将保存为 .h2d 文件，可在 MCP 服务器中导入
+      </p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

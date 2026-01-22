@@ -1,0 +1,38 @@
+{
+  "name": "html-to-design-mcp",
+  "version": "1.0.0",
+  "description": "MCP 服务器：将 HTML/网页转换为 Figma 设计稿，功能类似 html.to.design",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts"
+  },
+  "keywords": [
+    "mcp",
+    "figma",
+    "html",
+    "design",
+    "converter"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "puppeteer": "^21.6.1",
+    "cheerio": "^1.0.0-rc.12",
+    "axios": "^1.6.5",
+    "jsdom": "^23.0.1",
+    "css-tree": "^2.3.1",
+    "css-select": "^5.1.0",
+    "svg-parser": "^2.0.4",
+    "mime-types": "^2.1.35",
+    "sharp": "^0.33.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "html": "<div class='card'><h2>产品卡片</h2><p>这是一个产品描述</p><button>立即购买</button></div>",
+  "css": ".card { width: 300px; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); } h2 { color: #333; margin-bottom: 10px; } p { color: #666; margin-bottom: 16px; } button { padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }"
+}
